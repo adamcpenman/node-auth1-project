@@ -9,10 +9,10 @@ const port = process.env.PORT || 4000
 server.use(helmet())
 server.use(express.json())
 
-server.use("/users", usersRouter)
-server.use("/auth", authRouter)
+server.use("/api", usersRouter)
+server.use("/api", authRouter)
 
-server.get("/", (req, res) => {
+server.get("/", ( req, res, err) => {
     res.send("<h2>NODE AUTH1 PROJECT</h2>")
 })
 
