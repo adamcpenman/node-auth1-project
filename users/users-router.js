@@ -3,6 +3,10 @@ const usersModel = require("./users-model")
 
 const router = express.Router()
 
+function restricted() {
+    
+}
+
 router.get("/", async  (req, res, next) => {
     try {
         const users = await usersModel.find()
