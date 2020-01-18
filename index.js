@@ -45,7 +45,7 @@ server.use("/api", usersRouter)
 server.use("/api", authRouter)
 
 server.get("/", ( req, res, err) => {
-    res.send("<h2>NODE AUTH1 PROJECT</h2>")
+    res.send("<h2>NODE AUTH1 & 2 PROJECT</h2>")
 })
 
 server.use((err, req, res, next) => {
